@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --darkgrey: hsl(0, 0%, 12%);
+  --offblack: hsl(0, 0%, 8%);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--offblack);
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 14px;
+  color: var(--white);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card {
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--darkgrey);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-img {
+  border-radius: 50%;
+  width: 70px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.card-sub-title {
+  color: var(--green);
+  margin: 5px;
+  font-size: 12px;
+}
+
+.content {
+  margin: 15px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.link {
+  width: 100%;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 700;
+  row-gap: 10px;
+  text-align: center;
+}
+
+.list a {
+  display: block;
+  background-color: var(--grey);
+  border-radius: 5px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+}
+
+.list a:hover {
+  background-color: var(--green);
+  color: var(--offblack);
+  transition: all 1s ease-out;
+}
